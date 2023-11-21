@@ -1,0 +1,198 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : RiakConnection
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x152cdc5701663890
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1+
+      RiakConnection is Class
+      PROTECTED
+      	m_sAddress is string	// Address (or host name) and port for connection to the Riak server (or to the cluster)
+      END
+     type : 131072
+  procedures :
+   -
+     name : Manufacturer
+     procedure_id : 1525836640015562896
+     type_code : 27
+     code : |1+
+      PROCEDURE Constructor( sAddress is string )
+      
+      m_sAddress = sAddress
+      
+     type : 589824
+   -
+     name : Destructor_
+     procedure_id : 1525836640015628432
+     type_code : 28
+     code : |1+
+      PROCEDURE Destructor()
+      
+     type : 655360
+   -
+     name : BucketList
+     internal_properties : CAAAAAgAAABUHz8hVhFi02/J7EhBrMlSNO0MeAqWBppfCjnxm/4kgJdm7XWgB5T6wjMexC1lxpG0E9/miOIxDqpCyq3t86PoLtBkATH/1oB8x09XjEnNP/qUDpwcbSPg0NLupmnY36w8JgJ/5axk6CsPJRVV4Ib+UFiKlFTTIkF739C1c2Up+mtV1Q==
+     procedure_id : 1525836640015693968
+     type_code : 12
+     code : |1-
+      // Summary: Lists the buckets found on a Riak server
+      // Syntax:
+      //[ <Result> = ] BucketList ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	array: array of strings
+      // Automatic process of errors:   run the block of code CASE ERROR
+      //
+      
+      PROCEDURE BucketList()
+      
+      arrBuckets is array of strings
+      
+      // Reference: http://docs.basho.com/riak/latest/dev/references/http/list-buckets/
+      query is a httpRequest
+      query.URL = m_sAddress+["/"]+"riak?buckets=true"
+      
+      answer is a httpResponse = HTTPSend(query)
+      sContentTypeReponse is string = answer.Header["Content-Type"]
+      IF answer.StatusCode<>200 _OR_ sContentTypeReponse<>"application/json" THEN
+      	ErrorThrow(1,StringBuild("Failure listing the buckets, HTTP code returned: %1, content: %2",answer.StatusCode,answer.Content))
+      	RESULT arrBuckets
+      END
+      
+      vInfo is variant = JSONToVariant(answer.Content)
+      FOR EACH sBucket of vInfo.buckets
+      	Add(arrBuckets,sBucket)
+      END
+      
+      RESULT arrBuckets
+      
+      CASE Error:
+      ErrorPropagate()
+      RESULT arrBuckets
+     type : 458752
+   -
+     name : ServerPing
+     internal_properties : CAAAAAgAAABUHz8hVhFi02/J7EhBrMlSNO0MeAqWBppfCjnxm/4kgJdm7XWgB5T6wjMexC1lxpG0E9/miOIxDqpCyq3t86PoLtBkATH/1oB8x09XjEnNP/qUDpwcbSPg0NLupmnY36w8JgJ/5axk6CsPJRVV4Ib+UFiKlFTTIkF739C1c2Up+mtV1Q==
+     procedure_id : 1525836640015759504
+     type_code : 12
+     code : |1+
+      // Summary: Interrogates the Riak server to check whether it is operating
+      // Syntax:
+      //[ <Result> = ] ServerPing ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	boolean: True if the server responded OK
+      // Automatic process of errors:   run the block of code CASE ERROR
+      //
+      
+      PROCEDURE ServerPing()
+      
+      // Reference: http://docs.basho.com/riak/latest/dev/references/http/ping/
+      query is a httpRequest
+      query.URL = m_sAddress+["/"]+"ping"
+      
+      answer is a httpResponse = HTTPSend(query)
+      IF answer.StatusCode<>200 _OR_ answer.Content<>"OK" THEN
+      	ErrorThrow(1,StringBuild("Ping failre, HTTP code returned: %1, content: %2",answer.StatusCode,answer.Content))
+      	RESULT False
+      END
+      
+      RESULT True
+      
+      CASE Error:
+      ErrorPropagate()
+      RESULT False
+      
+     type : 458752
+   -
+     name : ServerStatus
+     internal_properties : CAAAAAgAAAAJwhLTTV2MkYPTUIZF2qyQbpo3oJBwQ8qUFK6bn+AQpSJx2p9419eS7z5qq+CBD8FOgypNVuGBzTTNXgYV9mXY7pGy7zfDjvogNvPqyBqW99lnKSQwbqhO757pGzaF95aiUeB8vdxumZmcd5ztCbeOh96MzYtWO+gJNiBGE7+K+s4wvAUGpLasVqz/ebNhmln6doh1MMYyklJ4Xm3N1LB7YrjUMSYINdll2YAlaYTJoQRkj9V2bQ==
+     procedure_id : 1525836640015825040
+     type_code : 12
+     code : |1-
+      // Summary: Returns the status of the Riak server
+      // Syntax:
+      //[ <Result> = ] ServerStatus ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	variant: server properties
+      // Automatic process of errors:   run the block of code CASE ERROR
+      //
+      
+      PROCEDURE ServerStatus()
+      
+      vStat is variant = Null
+      
+      // Reference: http://docs.basho.com/riak/latest/dev/references/http/status/
+      query is a httpRequest
+      query.URL = m_sAddress+["/"]+"stats"
+      
+      answer is a httpResponse = HTTPSend(query)
+      SWITCH answer.StatusCode
+      	CASE 200
+      		vStat = JSONToVariant(answer.Content)
+      	CASE 404
+      		ErrorThrow(1,"The statistics are not enabled on this server.")
+      		vStat = ""
+      	OTHER CASE
+      		ErrorThrow(2,StringBuild("Error reading the stats, HTTP code returned: %1, content: %2",answer.StatusCode,answer.Content))
+      END
+      
+      RESULT vStat
+      
+      CASE Error:
+      ErrorPropagate()
+      RESULT vStat
+     type : 458752
+   -
+     name : BucketOpen
+     procedure_id : 1525836640015890576
+     type_code : 12
+     code : |1+
+      // Summary: Creates the object to handle a bucket
+      // Syntax:
+      //[ <Result> = ] BucketOpen (<sBucketName> is string)
+      //
+      // Parameters:
+      //	sBucketName (ANSI string): name of bucket
+      // Return value:
+      // 	RiakBucket: object for accessing the bucket
+      //
+      PROCEDURE BucketOpen( sBucketName is string ) : RiakBucket
+      
+      IF sBucketName~="" THEN
+      	ErrorThrow(1,"Bucket name not specified.")
+      	RESULT Null
+      END
+      
+      clBucket is RiakBucket(m_sAddress,sBucketName)
+      
+      RESULT clBucket
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : Classe1
+resources :
+ string_res :
+  identifier : 0x1006a18e33fe3fe5
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

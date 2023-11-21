@@ -1,0 +1,192 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WIN_Connection
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : WIN_Connection
+ identifier : 0x252cdc55047e2dd7
+ internal_properties : CAAAAAgAAAADrRhCpahN55Cbxn9cipGLGU5L2TxzQjAQnaxnaTS0NUr4iKzx5Ctnt7jwPDdxpP0nTk9qiopD437XCuolbrIjg6z3q4kTPjJqNVgGIgWjr8ydV5Z0iHtrJSP7j2TUNeBns8oWJAOEfmys1nu8zUFxMuyZMSEzqzppfI03nrjJ7vI57Y2JS0Sw4BvSH7SVWqx8DTUZSx4kIZuXdWdqk6O8Nsd7XPfi4aSKLuAeJeqopplztx/2ovZgOmSIHKMUafYPfgG8xtNtvhG/JK0f3c+0sXc07DdqlGBnXtZQlytRyeQUWXJT7qw0RUnNGMESGql6Ny7ti8QeYeZWOZcS+yy2b5CDMgMU16Pra9ANMEHTdFSjnMI/M2RMCWubVKdTkXvvOaYKeHn3/hofeiDRl4CNrukINFEjyO2Bc872mSkZio/2wCkTl9ABKYZMuaTaRK6A9g9rhp1Zpy8x/Sz1hRBSgJgDRF5bsWu9bFoTDX72Y5zXpM+b4vl6fuaE7SGcZaZV8ygiDRSLpT+4fFdEQpyxPURrJOelS5F/oC2a94tCQwDgjwna8mLiKe2vVi4VAmB7heVZQbbyTALEhCvDEOnHRHJpySbvqXNW1CtiERBdtt9VAZI7/IzJjc6ZdhJit/yNvgExIOeI576E043+CerF//voCTS5jBCSKbXGUiTPu85OZSd/tzYSyYVm+EM4IYT76Aetczk+FzccfAB8BBcRp0ZbOeBv2g9Tz6gnBKbBxEXLalKhZtizpc0UI9ci1bxc7unUNzUNTs376FvpwsSo9TLBpEzaTc29YtT8hy505V+uEwADkFxA5Yf5wrS9VKzZsqf12E/d71oUXoCcGWgR6jdw1YrAX9tDxvrdbuTZQa+N4gcV/3Wv2rZqnBxXOlRWwdeqpE3fPyk=
+ properties :
+  width : 771
+  height : 272
+  widthClient : 769
+  heightClient : 240
+ controls :
+  -
+    name : STC_This_example_presents_the_access
+    identifier : 0x252cdc55047f2dd7
+    internal_properties : CAAAAAgAAADxXVYtj5HtB/bd96Lh9n4wEVP6Jh3lThn41xGJSM0dDT9hPo6avuIfXW6grx8l0af9ZKIPq53ldLmO216htpcfUSBsH/Dp0Sb0w0qG6ypX4d84WuoCLi2e/bvGtjPA3WDF5aJySthlfGkDiA9EDNQRh9E5yZYSGZ8T0At281fqVKwlybV4Ya1wLp1b4prEnFuOo8VWVIAnnTOrHLrpBnavByZ7cxtewV9/UF0US+uYjd12xMl5t3K6VoG1TuAxB4ZkmIqRfeMSn9eNQB5Mi/ndIc4kOg2m2bk2Yu6uleHDPM2wQN7iyzZ2GaKkZ1yRUUEytPWYiZW3CZgGNFnyrdWfiLvVt1/n65ZZwCYaa9veHwVnWzYI4TNy/enVvMxm1o0XazaLnuGLKcynahx8b/LvYde5f8KtCizKeIxHFMvtVebd8yDNtnpqvmF6hJIRe0P2UbGYzA/LXHIeOy1MNU1CeQDn35LNrmyd++HgVRqdcuEgZx4RiZDij/JMgC0nsQoeJSbplp1AQ5YLyc/RfDV66yecBgpD6QBU356FOLhOphZopKieM1BZsIeoos+koHdkIIiqJ9w1ZTN1rOnbeq+bu0ZJUm4x9K6+v5Wqt52ciPZS6/vx4FihqgUwUHowtKiTVzktzVbg742nc3j8qU1HPhAbYxE3xzEh2AgthHcPoRWemnjTb+RmQGzrzEFQN7GiH/6D3elWcA/gquiRrc8tumlAqDfy8fAnnjKGHN1N3XT5r5MfHrFPY5KEAUCg9JwQrkkUYpgypUxxvAwKEjNolDNKxd+xVg3ZqSML0HEI3QR7lAUJNSgKGZiTWoo9
+    properties :
+     x : 52
+     y : 71
+     width : 711
+     height : 45
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : EDT_ServerAddress
+    identifier : 0x252cdc5504802dd7
+    internal_properties : CAAAAAgAAACZgjjugnuSJndfMYaal2HNt5gK8R7c9pfgKszlxa1C1dcoeXcPH6UJj2mXXSj+ccXndB/CejHEUOV4mkS6TyNgfO7A010KMHDPP3tDCYP2PsjQSMtZ6Y7/xvWlk3BzVz47mtWF5oLAJeQnGHfjfpAr64SO97yWJRSPv8Xu/XDdRzWE4oCHeO9IVl+Kttxwqrrj2E3iNv2+BQPvSSfm9SHzcTFNPJ0AYfaXtMqE25Z97LF5yinAAHq7fd8SYNUicu43xI7v8hPeox0M1JQfK9NXcR2V7vQqzNbWzJnYVWyoNSxrfIVZkmCRco0dZaz0163+sytQN6LHj8+qbAF/awIEnQl3xaToF4HWj7kDv7f8oeZYnv9DNBWQLfFO1r9yMj9zBe8cRjNQwRHx+5NgUme0yFnGM/frUUDiqDfCuVD4Px40RYSy8caD72bJZvSz+QBQuF/HahP2MtHOhGDiKrbJWIh8a5t5aLgB2sCqyNM9DYxSos+AN5DAdF8SOlwsD/ua8S4RTuqYzYscTW1tt6ZOec7y1G/RubDuBtMWcRCPFJmo4O4dQI2ceLkvRZVeaFrNNFOom3/xgUGls8PP42vS93xpvmiCSPQNpwOmIjoTMQzjaKbtRAU3d3fEwepykICz3mg+BIR+Z3x30qmGRlkHzXgeTdIe2rIYiA2WRGVFwJlSSsbSKQAhA/XmI2thuc6+ZalvXfv2tHBOPrdyc0TJI0YRnem982D9dUFwxlIpFecE2yy9Auk22HUmzXs0EpU66xVDFR47GUCpVP2h/X7WUjKmLmBcaQXuTJuQ4LodmDWZSwzWxWm7L7r2YP93dkM76z1ZBrT1DvIqwoUuDwLyXWhuZu6G0bGmACsIyCnoawVIq3eaW7kIi4d5WsnlXsaHNqwnauTfPc3porVRmkymemjerHYw0QBiHjzLUoBLNPkrzKlwrmhw+l/oOZ57jN80s+VR/lq2c08PhEwE5pJwgobAiFpmZW1Bvk2bY+OTizFBnK5x1gl5aWYh1+VLSsjm2Fog7qpRYOWXnBZuCDUMU0eH8iA7DqMVHHkEcxwxQqE34rB4Tqg7YF0lFFe4DF788cjyxKuaz5LxlyZw6kRiOS+Peey4q+l9YVsCAMA1lUzvyBdThM1J49DmJponVC/PNxIoIpZ6/76wRkeHsa535JPmLwt+SbLRHDxzRVGHWadnjYA08Gn1gORnepzQ7D+Qq56SEHU05K0fArhucsm+Sn8qdqqK1CEO/Wzge4YbJS8gn2KLq3OfVV2o4OsqB2HmLL6nPz3n7hDcufPSQvU0R60xLObD4RmUNVwQJDpv8yoyKXZhls7kWftGEy7V8AsTt21/tMNp7WSKbyWP4mLOAYCisesWGUzwCksOtl8QQ5zR5DtOOJLjkupMQttejbPwiHRWmQt5Gj7NheKVtVwAWaV3wijYEIWzqJ6jGAvXxGBxbdXTYbO+7v3G0MXA+oyd
+    properties :
+     x : 72
+     y : 146
+     width : 538
+     height : 22
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+  -
+    name : STC_WD_Riak
+    identifier : 0x252cdc5504812dd7
+    internal_properties : CAAAAAgAAABKngsDo+ZhdSb50CkP2cO9Kpz3xjgXgk+lB7IFeOgF3iLYvKxZl0yY1Yq9rlzJBVowN41CkaR5b1rtBZiNcZhP7SvlLJ+1F8kBgfOoE1K2bUXuzLsOPQNQSt7om/uf6HMKaNwutOXDWZszv6f/46NSB71lOBkm/KAqPoexU2mfK2ZRioMpbIBi2HEvYCFWlLY1hAibk6eWsqP78BOydWt0I9UIxp+1LdnA6/TzeKUsWFl8HqB1AyFj+6+bLC2KK/3AORSK2HQ9WDd0P2FyEADzGjtrdaL2FDnpiEpr9h2ptI5HeWVEH1nXcB0hwrdlj17KTtt5I62QuXHLdFUrEbRizqUO8vAg26PH2ZOYyuEetDVQ70q4eIZZC/7bgwjA9KE2qO+2JBmHkkTMhGVI2JWk3x3lu0W+1RK/FVKrZx0iA/k4JZsWW1uMwGDlEsnqbCXplaAyXyIWGYEXNonjqxu/FEnoGLZmMu8gwTKFyZz/u0xk8CIzjHUurDC5qv6qToWmS1GAbB1L7NRE+2jfmOYCd/hFvuVdm0ewpXK3MF5TmE9nMP1bhHSfEFLmB0w9uw==
+    properties :
+     x : 6
+     y : 6
+     width : 185
+     height : 59
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : BTN_Exit
+    identifier : 0x252cdc5504822dd7
+    internal_properties : CAAAAAgAAACB+Ts+TYbR31KzwC6GPslolaqOrEbwbzPE+vgHpIVBiLzU9MCTwTOOYZSpoK3QItps/sOaAXXJn/3LzP9wkI0DdqbBP2qVeE9Oh9tgQf+gdYpmf3Ix/+aNwpHWOzBjc4e2n50WWfq9zvedQYFcji9Vrhjc75XVesxnhgcoQApOhA0BGgtkf89t8GNvPD+iCM1wJCzyqvlyIYoy03mygNAEGxegU8gnGVkYUizrZPlQjZ9nI7Fn+enTLNnXCoD6wJj2S62xr6mDS22xQKaqhW1EIctnIVZhc77Bxk3WIB/0gWKMH0vhL5YZY2lZJG0K31ZSSdb5bN9Y7rYrAvlRIzmkMocHdmxwr91nxxUob/2nkSdZ9ciRUwEiesXwPjm9aHXeh69HGbzGaHw6XGQAW+t5HCDH3R2UcpNIPkeSxYBqd0M0zPJcr8TI3AN/pv9PdDh4tBRoQ7g3iMdULR6Lo6FokpeTI9mUw8PJyK6siwRKLGkCJiFN2WN4jrojcDqxcnou9MreNAJYqvRpgh5tEWjnNegAh+hf8/rioZc6LXSRcygINqwanFjtrjVn2BBRxrhjTC1VY3H/ircjc75cRz20bRHfh/fsN+B5+cYFrTVWWe8XZVBkEw/1GvAxenJQ3Vn3F4Z1dUtJOO7dbwJ4/GwK0AqeigeKfsWcH2/XfCa8oyiZF3Vaca9136JS5lIpG86nBfLwMU/RdZL6ZHzIXhHI0Ixrb5UGt7wY2y/ry55e7orl75sikoZz5IMjpE1YhzlyJxLjvbTIQ6WQF/zJijlvcfy321U++zZNemwwmI9lrwRM5/lekMrt5Kt840HK39t9oxhEq3r2n5BhpGEcfR9lQYxY1g+cp2H+Z1h8WVB6az4x2NCsgF7muG3SXeqRK/hleh8aHg==
+    properties :
+     x : 683
+     y : 210
+     width : 80
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         MyWindow..ReturnedValue = Null
+         Close()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_Connection
+    identifier : 0x252cdc5504832dd7
+    internal_properties : CAAAAAgAAABifiUBXWzMqbk/BStT08vuyvRvOIuBWQ5l8FRxG4PlNkV5HZHSlBuazXDpAlttqi7XA5/O0ZABEbEjwhpT6Js+UN2Tnv7RTiCARqsRjlfnRzgIa464Z+YbmT8OXaXbJmp43gPvoMD/Jz9VPZsDpyWEhL65gSl1yUlkV0BUMaKHZBG4bhOc64Pb5ojLtA/OZZyFDaaU8Pnp9yTdxHTek2QZFd4H+pnxhWkr73/RT20vzZkZAcFv4OnhNqBsoZsNCIXGrupkB5df/HOG4ceOT5Wav4umW4Tgij+iQH8nnRocfefZP7KMiACpOXzqSrpl42VTRnDcaHJgTR4L7Y2mcOmbZE6WwbSa636gvtr2eaomBuDIDaP9AphS4qVr6n76vLRbmkjmFpxIkKlRZVxVDlfQZFd6IPeHai2MIxEl5y0FW+GGpGYrIP+IdR1ggj8cflqmqDLQ8jF3ZUxVlfaI3VZdVefCnHMZXPitXU0SAOQpTOAIHMpLGuIOG4yRjxxHWWLR1EVugWaWwXWi7x7fdAfxzXxNPqNAYOF4h8oDRrxryMa+qFiy2IGXfj1fJkEChz/w1TqUXEdgTRYiqwW9mQrrUblelfZnE/9E81UlM/qkYGyP6WSV6h6pw6FOLVEwzjwS7mrnqcayVUTJJ/OzTCPcU/8KG3Bj04e2mo/ce6+VZnpTRUckhQ29tKb0WqhPJcDtLYCR8EHtDjbMBVSYpz+9MRrZkH/YSssMC2jdEL+k2+EZGE9XqmxX2Hnq2RYgCzcp1pvLYksxDVvIIiFQvME5cWlmepZcOcDlTdZLV6qJZ2An6hgqg2062Ooo8fH96YPwxGjafD5L1tvsi3bghX7zgz8u4Zfkvv5B4EWM1RJKPwI0D2Rkyygs3nGHdJ/OC4FrqPB+gTtJ8v0pV+40x6xrv5YC0SU=
+    properties :
+     x : 616
+     y : 146
+     width : 80
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+         gpclRiak = new RiakConnection(EDT_ServerAddress)
+         IF gpclRiak.ServerPing()=False THEN
+         	Error("Failure connecting to the Riak server","The following error is returned:",ErrorInfo(errFullDetails))
+         	RETURN
+         END
+         
+         MyWindow..ReturnedValue = gpclRiak
+         
+         Close()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : SHA_NoName1
+    identifier : 0x252cdc5504842dd7
+    internal_properties : CAAAAAgAAAB8BB3V2oAdGacQBX2aiX/TFsca4qm38ByGHCwualWmxegFyJHMQAwgc9xKhsxHzQ866GtKQNwCvW9w92jjoAa67ElxzY24ECm7pRDaptZ4Z19auzPC2HrOGevkm3fA7IJHgDIyAqtbLDoHsJs65+Gx58Q9T5MGaatZtxVda8QvJ7mRyOOlJDv4dn7r+AcaBSVdNOqH5blb3eGxsw8z1WJBZY5tHxXtrHE2+HkvH8kgCpC9XfZnNfP+FKpzKkv5xg48I2/4RdtIvjQp8P3DfRtqr4WjEptIcd2k748iM6v94ztoDaGqHOr+TMe3UdGcyX4mYQQF4SLQwv86OcxIlrCac8YwpGsUOlU8uVbVzw6rBybQTQXNEeq+JsqMirAOJU/OHragtnrdGBrPoDs=
+    properties :
+     x : 6
+     y : 202
+     width : 757
+     height : 2
+    type : 20
+    code_elements :
+     type_code : 32
+     p_codes : []
+ menu :
+  name : _Menu
+  identifier : 0x292573e513b5f221
+  internal_properties : CAAAAAgAAACCv199ARoPUfG3WAPSG9eefhOOjWMQrs8CrX6cGGGJPoSHWBq4PXhStOWc1YnAZMZ5+EFR1WTDn8CTOTiyLnXPpAR5X8rsRkPZrm1yZeYDDt4kRzDPLbUf4Sh/mD3kd1D8V2drCFLmjeQhgpw7GKGwHRga+ZdjSqXGIC3LD1RracZ230hOmUJTj+ABDW4IHrw4PflmVGgp8E9KnAf/gselRrzEY90l3Cr9N00QijFYYrbrl4qF4kdim1YX6jYT4ezQhbJsU84ENZsxzq+o0JVHYQ8rxck600VhGV04/ao=
+  options : []
+ languages :
+  - en-GB
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAAAjFWXItEk/EPvcbGR+hALkgRfdOpVtIn+yZNxHnmSRFJegE/AnD2HbGAaMfhGCqfzkryHG9FVhjtF+iQYkZ59QBQ88Okhh0vjCoVhOagox2hvIqrJnU30QK15/ZA==
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1-
+      PROCEDURE MyWindow()
+      
+      gpclRiak is RiakConnection dynamic
+      MyWindow..ReturnedValue = Null
+   -
+     code : |1+
+      
+      
+     type : 34
+   -
+     code : |1+
+      
+      
+     type : 234
+   -
+     code : |1+
+      
+      
+     type : 165
+   -
+     code : |1+
+      
+      
+     type : 177
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1+
+      
+      
+     type : 2
+ code_parameters :
+  internal_properties : CAAAAAgAAAAspXRQsX4kpYpRJzI8SMGEUfXYJhQeqig0H9mPZLI9hoPnkeFEnSQ8t7JVd8VUY9eLyST/2DyAYB+9rK7lbHVOclfSdkhgAQ9dNjlmStKMpPl9
+  original_name : Modele1
+resources :
+ string_res :
+  identifier : 0x1006a18e340f4014
+  internal_properties : CAAAAAgAAACyXVFaObH4lOGSEHJoZf1MD49w+XTw2LScZCP/urkWFwy+HYJdyQ3umA==
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe
